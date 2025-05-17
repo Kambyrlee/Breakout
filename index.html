@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Breakout</title>
+</head>
+<body>
+<canvas id="gc" width="800" height="600" style="background:black">
+
+<script>
+  const ctx = document.getElementById('gc').getContext('2d');
+
+  let ball;
+
+  function gameStart() {
+
+   ball = {
+                r: 10,
+                x: 400,
+                y: 300,
+                xv: 3,
+                yv: 3,
+            };
+  }
+
+  gameStart();
+
+  function GameLoop() {
+
+
+    window.requestAnimationFrame(gameLoop);
+  }
+
+    window.requestAnimationFrame(gameLoop);
+    
+</script>
+
+</body>
+</html>
